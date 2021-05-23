@@ -3,5 +3,5 @@ output "vpc_id" {
 }
 
 output "subnet_id" {
-    value = aws_subnetc.tf_vpc_subnet1.id
+    value = aws_subnet.tf_vpc_subnet1.id
 }

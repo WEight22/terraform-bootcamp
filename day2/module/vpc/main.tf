@@ -9,7 +9,7 @@ resource "aws_vpc" "tf_vpc" {
 
 resource "aws_subnet" "tf_vpc_subnet1" {
     vpc_id = aws_vpc.tf_vpc.id
-    idr_block = "10.0.1.0/24"
+    cidr_block = "10.0.1.0/24"
     map_public_ip_on_launch = true
 
     tags = {
