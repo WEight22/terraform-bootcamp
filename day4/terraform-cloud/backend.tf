@@ -10,8 +10,7 @@ terraform {
   backend "remote" {
     hostname = "app.terraform.io"
     organization = "example-org-0eb5a7"
-
-    workspace = {
+    workspaces = {
       name = "terraform-bootcamp"
     }
   }
