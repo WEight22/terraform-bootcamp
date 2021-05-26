@@ -8,9 +8,9 @@ terraform {
 
   required_version = "~> 0.14"
   backend "remote" {
-    hostname = "app.terraform.io"
+    hostname     = "app.terraform.io"
     organization = "example-org-0eb5a7"
-    
+
     workspaces = {
       name = "terraform-bootcamp"
     }
